@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>四分割メモ</title>
+
+<style>
+body {
+  font-family: sans-serif;
+  background: #fafafa;
+  padding: 20px;
+  color: #333;
+}
+
+h2 {
+  margin-top: 0;
+  font-size: 18px;
+  border-left: 4px solid #4a90e2;
+  padding-left: 8px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 300px 300px;
+  gap: 15px;
+}
+
+.memo {
+  background: white;
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  display: flex;
+  flex-direction: column;
+}
+
+.memo-title {
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+textarea {
+  flex: 1;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 8px;
+  resize: none;
+  font-size: 14px;
+}
+</style>
+</head>
+
+<body>
+
+<h2>📝 四分割メモ</h2>
+
+<div class="grid">
+  <div class="memo">
+    <div class="memo-title">メモ 1</div>
+    <textarea></textarea>
+  </div>
+
+  <div class="memo">
+    <div class="memo-title">メモ 2</div>
+    <textarea></textarea>
+  </div>
+
+  <div class="memo">
+    <div class="memo-title">メモ 3</div>
+    <textarea></textarea>
+  </div>
+
+  <div class="memo">
+    <div class="memo-title">メモ 4</div>
+    <textarea></textarea>
+  </div>
+</div>
+
+</body>
+</html>
